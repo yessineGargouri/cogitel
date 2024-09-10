@@ -2927,6 +2927,23 @@ input::placeholder {
   background-position: left top;
   background-size: cover;
 }
+.about-feature-icon-area {
+  position: relative; /* Ensure the parent is positioned */
+  z-index: 1; /* Set a higher z-index to ensure the content is above the pseudo-element */
+}
+.about-feature-icon-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../img/bg-top.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5; /* Opacity for the background image */
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
 .megamenu--tab__menu {
   -ms-flex-preferred-size: 240px;
       flex-basis: 240px;
@@ -13399,6 +13416,7 @@ a.scroll-top.show {
   }
 }
 .case-study__single-step .count {
+  text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
   color: #ddd;
@@ -13413,7 +13431,7 @@ a.scroll-top.show {
 .case-study__single-step .count-wrap {
   position: relative;
   height: 28px;
-  margin-bottom: 27px;
+  margin-bottom:15px;
 }
 .case-study__single-step .count-wrap .dot {
   width: 28px;
@@ -13421,10 +13439,10 @@ a.scroll-top.show {
   border-radius: 100%;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 45.3%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  background-color: rgba(254, 188, 53, 0.18);
+  background-color: rgb(0 169 143 / 19%);
 }
 .case-study__single-step .count-wrap .dot:before {
   content: "";
@@ -13436,7 +13454,7 @@ a.scroll-top.show {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background-color: rgba(254, 188, 53, 0.29);
+  background-color: rgb(0 169 143 / 26%);
 }
 .case-study__single-step .count-wrap .dot:after {
   content: "";
