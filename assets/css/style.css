@@ -2098,7 +2098,7 @@ input::placeholder {
   position: relative;
 }
 .header-navigation__nav nav > ul > li.has-children > a:after {
-  font-family:"Vipnagorgialla regular"  ;
+  font-family:'Ionicons'  ;
   font-size: 8px;
   font-weight: 500;
   position: static;
