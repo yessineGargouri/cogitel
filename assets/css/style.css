@@ -5050,7 +5050,7 @@ input::placeholder {
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 80%;
   }
 }
 /*=====  End of container  ======*/
@@ -8795,31 +8795,28 @@ a.scroll-top.show {
 }
 .brand-logo-slider__single .image {
   -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
+  transition: all 0.3s ease 0s;
 }
 .brand-logo-slider__single .image-hover {
   visibility: hidden;
   opacity: 0;
-  -webkit-transform: translate(-50%, 20px);
-          transform: translate(-50%, 20px);
   -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
+  transition: all 0.3s ease 0s;
   position: absolute;
   top: 0;
-  left: 50%;
+  left:0;
   width: 100%;
 }
 .brand-logo-slider__single:hover .image {
   visibility: hidden;
   opacity: 0;
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+
 }
 .brand-logo-slider__single:hover .image-hover {
   visibility: visible;
   opacity: 1;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: scale(1.4);
+  left:0
 }
 
 .brand-logo-grid__single {
