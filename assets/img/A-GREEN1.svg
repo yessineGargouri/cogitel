@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 219.3 113.61">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#drop-shadow-5);
+      }
+
+      .cls-1, .cls-2 {
+        fill: #02ac92;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        filter: url(#drop-shadow-2);
+      }
+    </style>
+    <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="5.67"/>
+      <feFlood flood-color="#1d1d1b" flood-opacity=".71"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-5" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-2" stdDeviation="5.67"/>
+      <feFlood flood-color="#1d1d1b" flood-opacity=".71"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-2" d="M228.79,163.2v-99.18h38.11v73.97h51.31v25.21h-89.42Z"/>
+  <path class="cls-1" d="M129.01,91.99h-37.51l-4.65,14.4h-41.56L85.49,7.22h48.31l40.21,99.18h-40.21l-4.8-14.4ZM99.6,67.68h21.16l-10.65-31.81-10.5,31.81Z"/>
+</svg>

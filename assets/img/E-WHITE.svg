@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 219.3 155.61">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        filter: url(#outer-glow-1);
+        stroke-width: 0px;
+      }
+    </style>
+    <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="5.67"/>
+      <feFlood flood-color="#000" flood-opacity=".35"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-1" d="m52.34,122.4V23.22h114.63v25.21h-76.52v12.45h40.36v23.71h-40.36v12.6h76.52v25.21s-114.63,0-114.63,0Z"/>
+</svg>
