@@ -51,7 +51,29 @@
 
 
 
+<style>
+    .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #2ba17a; /* Change cette couleur à la couleur que tu préfères */
+    border-radius: 50%; /* Optionnel : rend les icônes rondes */
+    padding: 10px; /* Optionnel : ajoute de l'espace autour de l'icône */
+}
 
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    color: white; /* Change la couleur de l'icône à l'intérieur */
+}
+
+.about-counter-content__image img {
+    border-radius: 10px; /* Ajuste cette valeur selon tes préférences */
+}
+
+#carouselExampleComplexe .carousel-inner img {
+    border-radius: 10px; /* Utilise la même valeur que ci-dessus */
+}
+
+
+</style>
 
 
 
@@ -70,9 +92,15 @@
 }
 
 .section-title-content li {
-    margin-bottom: 10px; /* Space between list items */
+    margin-bottom: 20px; /* Space between list items */
     color: #000000; /* Color for the text and bullet */
 }
+
+.about-counter-content__image img,
+#carouselExampleIndicators .carousel-inner img {
+    border-radius: 20px; /* Ajuste cette valeur selon tes préférences */
+}
+
 </style>
 
 </head>
@@ -586,11 +614,10 @@
                     <div class="service-title-container">
                         <!-- service title wrapper -->
                         <div class="service-title-wrapper section-space--inner--60">
-                            <h2 class="title">Most ambitious mega city projects we have <span
-                                    class="highlight">materialized</span></h2>
-                            <p class="text">Industrial engineering is a branch of engineering which deals with the
-                                optimization of complex</p>
+                            <h2 class="title">Nos <span class="highlight">Produits</span> </h2>
+                            <p class="text">Nous offrons une gamme complète de produits d'emballage, incluant des opercules, banderoles, étiquettes, sleeves, et complexes. Chaque produit est conçu pour répondre aux normes les plus élevées de qualité et de durabilité, garantissant une protection optimale et une présentation attrayante des produits finis.</p>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -605,14 +632,13 @@
                 <div class="col-lg-12">
                     <!-- filter title -->
                     <ul class="project-filter-menu section-space--bottom--80">
-                        <li class="active" data-filter=".energy">PREPRESSE</li>
-                        <li  data-filter=".energyy">IMPRESSION</li>
-                        <li data-filter=".environment">COMPLEXAGE</li>
-                        <li data-filter=".industry">ENDUCTION</li>
-                        <li data-filter=".manufacturing">DECOUPE</li>
-                        <li data-filter=".oil-gas">OIL &amp; SLEEVE</li>
+                        <li class="active" data-filter=".energy">Opercules</li>
+                        <li  data-filter=".energyy">Banderoles</li>
+                        <li data-filter=".environment">Etiquettes</li>
+                        <li data-filter=".industry">Sleeves</li>
+                        <li data-filter=".manufacturing">Complexes</li>
+                        <li data-filter=".oil-gas"> Produits Non Imprimés</li>
                     </ul>
-    
                     <!-- Filtered Content -->
                     <div class="about-counter-content__area section-space--inner--bottom--120">
     
@@ -625,16 +651,19 @@
                                         <div class="row align-items-center">
                                             <div class="col-lg-4">
                                                 <div class="section-title-area">
-                                                    <h2 class="title title--style7">Prépresse</h2>
+                                                    <h2 class="title title--style7">Cogimix®</h2>
                                                 </div>
                                             </div>
                                             <div class="col-lg-8">
                                                 <div class="section-title-content-wrapper section-title-content-wrapper--about-counter  section-title-content-wrapper--about-counter--style2">
                                                     <p class="section-title-content section-title-content--style4">
-                                                        Notre service Prépresse, doté d'une expérience de plus que 35 ans dans le traitement des photos, prend en charge vos maquettes depuis la réception de vos CDs, fichiers ou packaging, pour les préparer à une impression optimale mettant en valeur votre visuel et soignant les moindres détails.
+                                                        Complexe d'operculage thermoscellable pour différents types de pots avec remplissage FFS.                                                    
                                                     </p>
                                                     <p class="section-title-content section-title-content--style4">
-                                                        Un travail précis, s'appuyant sur une équipe talentueuse maitrisant les technologies héliogravure et flexographie ainsi que les systèmes d’épreuvage, qui nous permettent de vous garantir à la sortie de nos imprimeuses un rendu final à la hauteur de vos attentes et dans les meilleurs coûts et délais.
+                                                        Utilisant du PET transparent ou métallisé, notre Cogimix® avec sa fonction easy-open assure une facilité d'usage pour le consommateur, tout en préservant la fraicheur de vos yaourts et crèmes desserts.                                                    
+                                                    </p>
+                                                    <p class="section-title-content section-title-content--style4">
+                                                        Il peut être imprimé en haute brillance pour une meilleure attractivité sur les linéaires ou encore au verso pour vos besoins promotionnels                                                    
                                                     </p>
                                                 </div>
                                             </div>
@@ -646,29 +675,58 @@
                         <div class="containers energy">
                             <div class="row row-35">
                                 <div class="col-lg-6 col-md-6">
-                                    <div class="about-counter-content__image">
-                                        <img src="assets/img/banner/banner12.jpg" class="img-fluid" alt="">
+                                    <div id="carouselExampleIndicators" class="carousel slide about-counter-content__image" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="assets/img/products/cogimix.svg" class="d-block w-100 img-fluid" alt="Image 1">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="assets/img/products/yaourt.jpg" class="d-block w-100 img-fluid" alt="Image 2">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="assets/img/products/yaourt2.jpg" class="d-block w-100 img-fluid" alt="Image 3">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
                                     </div>
                                 </div>
+                                
                                 <div class="col-lg-6 col-md-6 padi">
                                     <div class="about-counter-content__content">
                                         <div class="service-details-tab section-space--bottom--80">
                                             <div class="nav nav-tabs service-details-tab__navigation-wrapper" id="nav-tab3" role="tablist">
                                                 <a class="nav-item nav-link active" id="service-details-item1-tab" data-bs-toggle="tab" href="#service-details-item1" role="tab" aria-selected="true">Caractéristiques</a>
-                                                <a class="nav-item nav-link" id="service-details-item2-tab" data-bs-toggle="tab" href="#service-details-item2" role="tab" aria-selected="false" tabindex="-1">Soil Science</a>
+                                                <a class="nav-item nav-link" id="service-details-item2-tab" data-bs-toggle="tab" href="#service-details-item2" role="tab" aria-selected="false" tabindex="-1">APPLICATIONS</a>
                                             </div>
                                             <div class="tab-content service-details-tab__content-wrapper" style="padding-bottom: 0px;">
                                                 <div class="tab-pane fade active show" id="service-details-item1" role="tabpanel" aria-labelledby="service-details-item1-tab">
                                                     <ul class="section-title-content section-title-content--style4 section-space--bottom--40">
-                                                        <li>Logiciel professionnel : ArtPro, Photoshop, Illustrator</li>
-                                                        <li>Système calibration : GMG, Esko</li>
-                                                        <li>Technique déformation Sleeve</li>
-                                                        <li>Adaptation héliogravure ou flexographie</li>
-                                                        <li>Fourniture d’épreuve couleur calibrée</li>
+                                                        <li>Transparent ou métallisé scellable sur tout type de pot plastique en remplissage FFS</li>
+                                                        <li>Excellent scellage avec résistance à la déchirure et à la perforation
+                                                        </li>
+                                                        <li>Impression en Héliogravure jusqu'à 10 couleurs
+                                                        </li>
+                                                        <li>Possibilité d'impression verso pour vos promotions ou Eye mark.
+                                                        </li>
+                                                        <li>Possibilité d'impression en haute brillance
+                                                        </li>
                                                     </ul>
                                                 </div>
                                                 <div class="tab-pane fade" id="service-details-item2" role="tabpanel" aria-labelledby="service-details-item2-tab">
-                                                    Agricultural soil science follows the holistic method. Soil is investigated in relation to and as an integral part of terrestrial ecosystems but is also recognized as a manageable natural resource. Agricultural soil science studies the chemical, physical, biological, and mineralogical composition of soils as they relate to agriculture.
+                                                    <li>Laitier : opercules pour pots de yaourt, crème dessert, beurre</li>
+                                                    <li>Autres : opercules pour barquettes confiture et miel</li>
                                                 </div>
                                             </div>
                                         </div>
@@ -677,215 +735,103 @@
                             </div>
                         </div>
                         <!-- IMPRESSION Content with Image -->
+                        <!-- <div class="containers manufacturing about-counter-title-area  section-space--bottom--60">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="about-counter-header-wrapper">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4">
+                                                <div class="section-title-area">
+                                                    <h2 class="title title--style7">Complexes</h2>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="section-title-content-wrapper section-title-content-wrapper--about-counter  section-title-content-wrapper--about-counter--style2">
+                                                    <p class="section-title-content section-title-content--style4">
+                                                        Nous proposons plusieurs solutions d’emballages flexibles en mono ou multi structure à base de films plastiques, papier ou aluminium pour une large gamme d’applications dans les marchés agroalimentaire, boisson et hygiène.                                                    </p>
+                                                    <p class="section-title-content section-title-content--style4">
+                                                        Diverses propriétés évoluées : haute cadence, barrière à l'humidité, oxygène, lumière et aux arômes…. sont proposées pour tenir compte des spécificités produits, conditionnement et productivité de nos clients.                                                    </p>
+                                                    <p class="section-title-content section-title-content--style4">
+                                                        Imprimés en héliogravure ou flexographie, nos emballages sont livrés en bobine pour une utilisation comme matériau de conditionnement en contact direct avec le produit.                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="containers manufacturing">
+                            <div class="row row-35">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="about-counter-content__image">
+                                        <div id="carouselExampleComplexe" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselExampleComplexe" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselExampleComplexe" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselExampleComplexe" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="assets/img/products/complexe.svg" class="d-block w-100 img-fluid" alt="Image 1">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/products/complexes.jpg" class="d-block w-100 img-fluid" alt="Image 2">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="assets/img/products/complexes-ch.jpg" class="d-block w-100 img-fluid" alt="Image 3">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleComplexe" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleComplexe" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-lg-6 col-md-6 padi">
+                                    <div class="about-counter-content__content">
+                                        <div class="service-details-tab section-space--bottom--80">
+                                            <div class="nav nav-tabs service-details-tab__navigation-wrapper" id="nav-tab3" role="tablist">
+                                                <a class="nav-item nav-link active" id="service-details-item1-tab" data-bs-toggle="tab" href="#service-details-item1" role="tab" aria-selected="true">Caractéristiques</a>
+                                                <a class="nav-item nav-link" id="service-details-item2-tab" data-bs-toggle="tab" href="#service-details-item2" role="tab" aria-selected="false">APPLICATIONS</a>
+                                            </div>
+                                            <div class="tab-content service-details-tab__content-wrapper" style="padding-bottom: 0px;">
+                                                <div class="tab-pane fade active show" id="service-details-item1-tab" role="tabpanel" aria-labelledby="service-details-item1-tab">
+                                                    <ul class="section-title-content section-title-content--style4 section-space--bottom--40">
+                                                        <li>Transparent ou métallisé scellable sur tout type de pot plastique en remplissage FFS</li>
+                                                        <li>Excellent scellage avec résistance à la déchirure et à la perforation
+                                                        </li>
+                                                        <li>Impression en Héliogravure jusqu'à 10 couleurs
+                                                        </li>
+                                                        <li>Possibilité d'impression verso pour vos promotions ou Eye mark.
+                                                        </li>
+                                                        <li>Possibilité d'impression en haute brillance
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="service-details-item2-tab" role="tabpanel" aria-labelledby="service-details-item2-tab">
+                                                    <li>Laitier : opercules pour pots de yaourt, crème dessert, beurre</li>
+                                                    <li>Autres : opercules pour barquettes confiture et miel</li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div> -->
                         
 
-                        <!-- IMPRESSION -->
-                        <div class="containers energyy about-counter-title-area  section-space--bottom--60">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!-- about counter header wrapper -->
-                                    <div class="about-counter-header-wrapper">
-                                        <div class="row align-items-center">
-                                            <div class="col-lg-4">
-                                                <div class="section-title-area">
-                                                    <h2 class="title title--style7">Impression Héliogravure</h2>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <div class="section-title-content-wrapper section-title-content-wrapper--about-counter  section-title-content-wrapper--about-counter--style2">
-                                                    <p class="section-title-content section-title-content--style4">
-                                                        Avec plus que 35 ans d'expérience dans les emballages flexibles, Altea Packaging dispose d’une expertise confirmée dans l'impression de différents supports : plastiques, aluminium ou papier.
-                                                        Selon vos attentes et exigences, nous vous proposons de l’impression haut de gamme en héliogravure ou flexographie.
-
-                                                    </p>
-                                                    <p class="section-title-content section-title-content--style4">
-                                                        Notre parc machines, sélectionné avec soin chez les constructeurs de grande renommée, imprime jusqu'à 9 couleurs et est équipé de plusieurs options de contrôle et de conduite automatique afin de vous garantir efficacité et qualité.
-                                                        L'impression étant un art de précision ou les technologies évoluent et se perfectionnent, la formation est au centre de nos préoccupations pour permettre à nos équipes d'être toujours à la pointe de ces technologies.                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                      
     
-                        <!-- IMPRESSION Content with Image -->
-                        <div class="containers energyy">
-                            <div class="row row-35">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="about-counter-content__image">
-                                        <img src="assets/img/banner/banner13.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 padi">
-                                    <div class="about-counter-content__content">
-                                        <div class="service-details-tab section-space--bottom--80">
-                                            <div class="nav nav-tabs service-details-tab__navigation-wrapper" id="nav-tab3" role="tablist">
-                                                <a class="nav-item nav-link active" id="service-details-item1-tab" data-bs-toggle="tab" href="#service-details-item1" role="tab" aria-selected="true">Caractéristiques</a>
-                                                <a class="nav-item nav-link" id="service-details-item2-tab" data-bs-toggle="tab" href="#service-details-item2" role="tab" aria-selected="false" tabindex="-1">Soil Science</a>
-                                            </div>
-                                            <div class="tab-content service-details-tab__content-wrapper" style="padding-bottom: 0px;">
-                                                <div class="tab-pane fade active show" id="service-details-item1" role="tabpanel" aria-labelledby="service-details-item1-tab">
-                                                    <ul class="section-title-content section-title-content--style4 section-space--bottom--40">
-                                                        <li>Impression recto-verso jusqu'à 9 couleurs</li>
-                                                        <li>Conducteurs de machines avec expérience minimum de 10 ans</li>
-                                                        <li>Systèmes de contrôle : caméra strobe, viscosimètre et repérage automatique</li>
-                                                        <li>Traitement corona en ligne</li>
-                                                        <li>Assistance électrostatique</li>
-                                                    </ul>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="containers energyy about-counter-title-area  section-space--bottom--60 section-space--top--60">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!-- about counter header wrapper -->
-                                    <div class="about-counter-header-wrapper">
-                                        <div class="row align-items-center">
-
-                                            <div class="col-lg-8">
-                                                <div class="section-title-content-wrapper section-title-content-wrapper--about-counter-right  section-title-content-wrapper--about-counter--style2-right">
-                                                    <p class="section-title-content section-title-content--style4">
-                                                        Avec plus que 35 ans d'expérience dans les emballages flexibles, Altea Packaging dispose d’une expertise confirmée dans l'impression de différents supports : plastiques, aluminium ou papier.
-Selon vos attentes et exigences, nous vous proposons de l’impression haut de gamme en héliogravure ou flexographie.
-
-                                                    </p>
-                                                    <p class="section-title-content section-title-content--style4">
-                                                        Notre parc machines, sélectionné avec soin chez les constructeurs de grande renommée, imprime jusqu'à 9 couleurs et est équipé de plusieurs options de contrôle et de conduite automatique afin de vous garantir efficacité et qualité.
-                                                        L'impression étant un art de précision ou les technologies évoluent et se perfectionnent, la formation est au centre de nos préoccupations pour permettre à nos équipes d'être toujours à la pointe de ces technologies.                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="section-title-area">
-                                                    <h2 class="title title--style7">Impression Flexographie</h2>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <!-- IMPRESSION Content with Image -->
-                        <div class="containers energyy">
-                            <div class="row row-35">
-
-                                <div class="col-lg-6 col-md-6 padi">
-                                    <div class="about-counter-content__content">
-                                        <div class="service-details-tab section-space--bottom--80">
-                                            <div class="nav right nav-tabs service-details-tab__navigation-wrapper" id="nav-tab3" role="tablist">
-                                                <a class="nav-item nav-link active" id="service-details-item1-tab" data-bs-toggle="tab" href="#service-details-item1" role="tab" aria-selected="true">Caractéristiques</a>
-                                                <a class="nav-item nav-link" id="service-details-item2-tab" data-bs-toggle="tab" href="#service-details-item2" role="tab" aria-selected="false" tabindex="-1">Soil Science</a>
-                                            </div>
-                                            <div class="tab-content service-details-tab__content-wrapper" style="padding-bottom: 0px;">
-                                                <div class="tab-pane fade active show" id="service-details-item1" role="tabpanel" aria-labelledby="service-details-item1-tab">
-                                                    <ul class="section-title-content section-title-content--style4 section-space--bottom--40">
-                                                        <li>Impression recto-verso jusqu'à 8 couleurs</li>
-                                                        <li>Conducteurs de machines avec expérience minimum de 10 ans</li>
-                                                        <li>Systèmes de contrôle : caméras, viscosimètre et repérage automatique</li>
-                                                        <li>Traitement corona en ligne</li>
-                                                        <li>Clichés numériques ou full HD</li>
-                                                        <li>Clichés : plaque ou manchon</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="tab-pane fade" id="service-details-item2" role="tabpanel" aria-labelledby="service-details-item2-tab">
-                                                    Agricultural soil science follows the holistic method. Soil is investigated in relation to and as an integral part of terrestrial ecosystems but is also recognized as a manageable natural resource. Agricultural soil science studies the chemical, physical, biological, and mineralogical composition of soils as they relate to agriculture.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="about-counter-content__image">
-                                        <img src="assets/img/banner/banner14.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="containers energyy about-counter-title-area  section-space--bottom--60  section-space--top--60">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!-- about counter header wrapper -->
-                                    <div class="about-counter-header-wrapper">
-                                        <div class="row align-items-center">
-                                            <div class="col-lg-4">
-                                                <div class="section-title-area">
-                                                    <h2 class="title title--style7">Station Mélange d'Encres</h2>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <div class="section-title-content-wrapper section-title-content-wrapper--about-counter  section-title-content-wrapper--about-counter--style2">
-                                                    <p class="section-title-content section-title-content--style4">
-                                                        Avec plus que 35 ans d'expérience dans les emballages flexibles, Altea Packaging dispose d’une expertise confirmée dans l'impression de différents supports : plastiques, aluminium ou papier.                                                    </p>
-                                                        <p class="section-title-content section-title-content--style4">
-                                                            Selon vos attentes et exigences, nous vous proposons de l’impression haut de gamme en héliogravure ou flexographie.                                                    </p>
-                                                            <p class="section-title-content section-title-content--style4">
-                                                                Notre parc machines, sélectionné avec soin chez les constructeurs de grande renommée, imprime jusqu'à 9 couleurs et est équipé de plusieurs options de contrôle et de conduite automatique afin de vous garantir efficacité et qualité.
-                                                                L'impression étant un art de précision ou les technologies évoluent et se perfectionnent, la formation est au centre de nos préoccupations pour permettre à nos équipes d'être toujours à la pointe de ces technologies.</p>                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="containers energyy">
-                            <div class="row row-35">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="about-counter-content__image">
-                                        <img src="assets/img/banner/banner15.jpg" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 padi">
-                                    <div class="about-counter-content__content">
-                                        <div class="service-details-tab section-space--bottom--80">
-                                            <div class="nav nav-tabs service-details-tab__navigation-wrapper" id="nav-tab3" role="tablist">
-                                                <a class="nav-item nav-link active" id="service-details-item1-tab" data-bs-toggle="tab" href="#service-details-item1" role="tab" aria-selected="true">Caractéristiques</a>
-                                                <a class="nav-item nav-link" id="service-details-item2-tab" data-bs-toggle="tab" href="#service-details-item2" role="tab" aria-selected="false" tabindex="-1">Soil Science</a>
-                                            </div>
-                                            <div class="tab-content service-details-tab__content-wrapper" style="padding-bottom: 0px;">
-                                                <div class="tab-pane fade active show" id="service-details-item1" role="tabpanel" aria-labelledby="service-details-item1-tab">
-                                                    <ul class="section-title-content section-title-content--style4 section-space--bottom--40">
-                                                        <li>Station de dosage à 32 têtes pour le mélange des encres</li>
-                                                        <li>Formulation et contrôle des couleurs avec spectrocolorimètre</li>
-                                                        <li>Sauvegarde de vos teintes et profils couleurs pour une qualité d’impression garantie</li>
-                                                        <li>optimisation de la gestion des encres pour une meilleure flexibilité</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="tab-pane fade" id="service-details-item2" role="tabpanel" aria-labelledby="service-details-item2-tab">
-                                                    Agricultural soil science follows the holistic method. Soil is investigated in relation to and as an integral part of terrestrial ecosystems but is also recognized as a manageable natural resource. Agricultural soil science studies the chemical, physical, biological, and mineralogical composition of soils as they relate to agriculture.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <!-- COMPLEXAGE Content -->
-                        <div class="containers environment">
-                            <p>Content for COMPLEXAGE goes here.</p>
-                        </div>
-    
-                        <!-- ENDUCTION Content -->
-                        <div class="containers industry">
-                            <p>Content for ENDUCTION goes here.</p>
-                        </div>
-    
-                        <!-- DECOUPE Content -->
-                        <div class="containers manufacturing">
-                            <p>Content for DECOUPE goes here.</p>
-                        </div>
-    
-                        <!-- OIL & SLEEVE Content -->
-                        <div class="containers oil-gas">
-                            <p>Content for OIL & SLEEVE goes here.</p>
-                        </div>
+                        
+                        
     
                     </div>
                 </div>
