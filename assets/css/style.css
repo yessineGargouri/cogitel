@@ -2996,6 +2996,20 @@ input::placeholder {
   opacity: 0.5; /* Opacity for the background image */
   z-index: -1;
 }
+.career-title-area::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../img/bgaltea.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5; /* Opacity for the background image */
+  z-index: -1;
+
+}
 .icon-info-area::before {
   content: "";
   position: fixed;
@@ -13583,6 +13597,10 @@ position:static;
   color:rgb(0,169,143);
   
 }
+.grow:hover:hover .see-more-link{
+  color:rgb(0,169,143);
+  
+}
 .case-study__single-step .count {
   text-align: center;
   font-size: 2.5rem;
@@ -17267,4 +17285,13 @@ display:none;
 }
 .padi{
   padding-top: 85px;
+}
+}
+.img-cap{
+  height:270px;
+  width:270px;
+  cursor: pointer;
+}
+.right-m{
+  margin-right:20px
 }
