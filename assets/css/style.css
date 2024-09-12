@@ -1478,6 +1478,9 @@ input::placeholder {
 .section-space--top--60 {
   margin-top: 60px;
 }
+.right{
+  flex-direction: row-reverse;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-space--top--60 {
     margin-top: 40px;
@@ -5135,6 +5138,9 @@ input::placeholder {
   .container {
     max-width: 80%;
   }
+  .containers {
+    max-width: 1200px;
+  }
 }
 /*=====  End of container  ======*/
 /*=============================================
@@ -6043,6 +6049,10 @@ input::placeholder {
   padding-left: 30px;
   border-left: 2px solid #eee;
 }
+.section-title-content-wrapper--about-counter-right {
+  padding-left: 30px;
+  border-right: 2px solid #eee;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
   .section-title-content-wrapper--about-counter {
     padding-left: 0;
@@ -6055,6 +6065,16 @@ input::placeholder {
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
   .section-title-content-wrapper--about-counter--style2 {
     padding-left: 0;
+    border: 0;
+  }
+}
+
+.section-title-content-wrapper--about-counter--style2-right {
+  border-right: 5px solid #dbe7f9;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
+  .section-title-content-wrapper--about-counter--style2-right {
+    padding-right: 0;
     border: 0;
   }
 }
@@ -6157,7 +6177,7 @@ input::placeholder {
   background-color: #eeeeee;
 }
 .grey-bg--style3 {
-  background-color: #f5f6fa;
+  background-color: #f5f6fa70;
 }
 
 .dark-bg {
@@ -17245,4 +17265,6 @@ display:none;
 .E-ABOUT-GREEN{
   display:none;
 }
+.padi{
+  padding-top: 85px;
 }
