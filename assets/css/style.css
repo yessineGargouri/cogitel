@@ -2996,7 +2996,7 @@ input::placeholder {
   opacity: 0.5; /* Opacity for the background image */
   z-index: -1;
 }
-.career-title-area::before{
+.bg::before{
   content: "";
   position: fixed;
   top: 0;
@@ -3006,8 +3006,8 @@ input::placeholder {
   background-image: url('../img/bgaltea.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.5; /* Opacity for the background image */
-  z-index: -1;
+  opacity: 0.3; /* Opacity for the background image */
+  z-index: -2;
 
 }
 .icon-info-area::before {
@@ -17294,4 +17294,13 @@ display:none;
 }
 .right-m{
   margin-right:20px
+}
+.row.row-35{
+  align-items: flex-end;
+}
+.gutter{
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
