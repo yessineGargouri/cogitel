@@ -2990,7 +2990,7 @@ input::placeholder {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../img/bgaltea.svg');
+  background-image: url('https://cogitel-project.marqenti.tn/assets/img/bgaltea.svg');
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5; /* Opacity for the background image */
@@ -3003,7 +3003,7 @@ input::placeholder {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../img/bgaltea.svg');
+  background-image: url('https://cogitel-project.marqenti.tn/assets/img/bgaltea.svg');
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.3; /* Opacity for the background image */
@@ -3017,7 +3017,7 @@ input::placeholder {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../img/bgaltea.svg');
+  background-image: url('https://cogitel-project.marqenti.tn/assets/img/bgaltea.svg');
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5; /* Opacity for the background image */
@@ -10915,7 +10915,7 @@ position:static;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../img/bgaltea.svg');
+  background-image: url('https://cogitel-project.marqenti.tn/assets/img/bgaltea.svg');
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.4; /* Opacity for the background image */
